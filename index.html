@@ -10,7 +10,7 @@
 <meta name="keywords" content="TSiD, technology consultancy Singapore, software development, AI automation, AI agents, web application development, chatbots, RPA, SaaS development, AI consultancy">
 <meta name="author" content="TSiD">
 <link rel="canonical" href="https://tsid.digital/">
-<meta name="theme-color" content="#faf8f5">
+<meta name="theme-color" content="#05070D">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -31,9 +31,10 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/neon.css?v=3">
 
 <!-- Structured data -->
 <script type="application/ld+json">
@@ -66,9 +67,9 @@
       <a href="#practices">Practices</a>
       <a href="#services">Services</a>
       <a href="#work">Case Studies</a>
-      <a href="/pavilion">3D Pavilion</a>
       <a href="#consultancy">Consultancy</a>
       <a href="#contact">Contact</a>
+      <a href="/pavilion" class="nav-3d">◈ Enter 3D</a>
     </nav>
     <div class="nav-cta">
       <a href="#contact" class="btn btn-primary">Start a conversation <span class="arw">→</span></a>
@@ -83,7 +84,7 @@
   <a href="#services">Services</a>
   <a href="#why">Why TSiD</a>
   <a href="#work">Case Studies</a>
-  <a href="/pavilion">3D Pavilion</a>
+  <a href="/pavilion" class="nav-3d">◈ Enter the 3D pavilion</a>
   <a href="#consultancy">Consultancy</a>
   <a href="#contact">Contact</a>
   <a href="#contact" class="btn btn-primary">Start a conversation →</a>
@@ -94,6 +95,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <div class="hero-bg" aria-hidden="true"><video autoplay muted loop playsinline preload="metadata" poster="assets/img/posters/pavilion-hero.jpg"><source src="assets/video/pavilion-hero.mp4" type="video/mp4"></video></div>
   <img src="assets/logo/sprig.png" class="hero-sprig" alt="" aria-hidden="true">
   <div class="container hero-inner">
     <span class="eyebrow reveal">Technology consultancy · Singapore</span>
@@ -101,8 +103,10 @@
     <p class="lead reveal d2">One partner that designs and engineers your software, AI, and automation in-house — then puts intelligent agents to work across marketing, sales, talent, and finance, where growth actually happens.</p>
     <div class="hero-cta reveal d3">
       <a href="#contact" class="btn btn-primary">Start a conversation <span class="arw">→</span></a>
+      <a href="/pavilion" class="btn btn-3d">◈ Enter the 3D pavilion</a>
       <a href="#services" class="btn btn-ghost">Explore what we do</a>
     </div>
+    <div class="hero-chip reveal d3"><i></i>Live 3D · walk all 12 services in your browser or a VR headset</div>
     <div class="hero-meta reveal d4">
       <div class="stat"><div class="num">01</div><div class="lbl">One partner,<br>end to end</div></div>
       <div class="stat"><div class="num">02</div><div class="lbl">Practices —<br>Build &amp; Grow</div></div>
@@ -158,11 +162,11 @@
         <h3>Technology Solutions</h3>
         <p class="sub">We design and engineer software, AI, and automation in-house, on a project basis.</p>
         <ul class="prac-list">
-          <li>AI, Automation &amp; AI Agents</li>
-          <li>AI Consultancy &amp; Strategy</li>
-          <li>Web Application Development</li>
-          <li>Mobile Application Development</li>
-          <li>IT Solutioning &amp; Infrastructure</li>
+          <li><a href="/pavilion#agents">AI, Automation &amp; AI Agents<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#strategy">AI Consultancy &amp; Strategy<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#web">Web Application Development<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#mobile">Mobile Application Development<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#infra">IT Solutioning &amp; Infrastructure<span class="go3d">3D</span></a></li>
         </ul>
       </div>
       <div class="prac-card reveal d1">
@@ -170,12 +174,13 @@
         <h3>Agent-Powered Consultancy</h3>
         <p class="sub">Advisory services delivered with AI, automation, and AI agents built in.</p>
         <ul class="prac-list">
-          <li>Sales Outbound &amp; Appointment Setting</li>
-          <li>Marketing &amp; Branding</li>
-          <li>Recruitment &amp; Talent</li>
-          <li>Immigration</li>
-          <li>Finance &amp; Advisory</li>
-          <li>Business Matching &amp; Education Consultancy</li>
+          <li><a href="/pavilion#sales">Sales Outbound &amp; Appointment Setting<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#marketing">Marketing &amp; Branding<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#recruit">Recruitment &amp; Talent<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#immigration">Immigration<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#finance">Finance &amp; Advisory<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#matching">Business Matching<span class="go3d">3D</span></a></li>
+          <li><a href="/pavilion#education">Education Consultancy<span class="go3d">3D</span></a></li>
         </ul>
       </div>
     </div>
@@ -199,38 +204,38 @@
 
     <div class="svc-grid">
       <!-- BUILD -->
-      <article class="svc reveal" data-cat="build"><div class="idx">B01</div><h4>Web Application Development</h4><p>Full-stack web apps, portals, dashboards, admin panels, PWAs and custom e-commerce — built from scratch with full control.</p><div class="tags"><span>Web apps</span><span>Portals</span><span>PWA</span><span>E-commerce</span></div></article>
+      <article class="svc reveal" data-cat="build"><div class="idx">B01</div><h4>Web Application Development</h4><p>Full-stack web apps, portals, dashboards, admin panels, PWAs and custom e-commerce — built from scratch with full control.</p><a class="svc-3d" href="/pavilion#web">◈ View in 3D →</a><div class="tags"><span>Web apps</span><span>Portals</span><span>PWA</span><span>E-commerce</span></div></article>
 
-      <article class="svc reveal d1" data-cat="build"><div class="idx">B02</div><h4>Mobile App Development</h4><p>iOS, Android and cross-platform apps (React Native / Flutter) — customer-facing products and internal field tools alike.</p><div class="tags"><span>iOS</span><span>Android</span><span>Cross-platform</span></div></article>
+      <article class="svc reveal d1" data-cat="build"><div class="idx">B02</div><h4>Mobile App Development</h4><p>iOS, Android and cross-platform apps (React Native / Flutter) — customer-facing products and internal field tools alike.</p><a class="svc-3d" href="/pavilion#mobile">◈ View in 3D →</a><div class="tags"><span>iOS</span><span>Android</span><span>Cross-platform</span></div></article>
 
-      <article class="svc reveal d2" data-cat="build"><div class="idx">B03</div><h4>AI, Automation &amp; AI Agents</h4><p>LangChain agents, RAG systems, workflow automation (n8n / Make / custom) and RPA that runs quietly in the background.</p><div class="tags"><span>AI Agents</span><span>RAG</span><span>RPA</span><span>Workflows</span></div></article>
+      <article class="svc reveal d2" data-cat="build"><div class="idx">B03</div><h4>AI, Automation &amp; AI Agents</h4><p>LangChain agents, RAG systems, workflow automation (n8n / Make / custom) and RPA that runs quietly in the background.</p><a class="svc-3d" href="/pavilion#agents">◈ View in 3D →</a><div class="tags"><span>AI Agents</span><span>RAG</span><span>RPA</span><span>Workflows</span></div></article>
 
-      <article class="svc reveal" data-cat="build"><div class="idx">B04</div><h4>Chatbots &amp; Conversational AI</h4><p>From rule-based FAQ bots to AI assistants with memory — on website, WhatsApp, Telegram and Messenger, for support, lead-qual and booking.</p><div class="tags"><span>WhatsApp</span><span>Web chat</span><span>Support</span></div></article>
+      <article class="svc reveal" data-cat="build"><div class="idx">B04</div><h4>Chatbots &amp; Conversational AI</h4><p>From rule-based FAQ bots to AI assistants with memory — on website, WhatsApp, Telegram and Messenger, for support, lead-qual and booking.</p><a class="svc-3d" href="/pavilion#agents">◈ View in 3D →</a><div class="tags"><span>WhatsApp</span><span>Web chat</span><span>Support</span></div></article>
 
-      <article class="svc reveal d1" data-cat="build"><div class="idx">B05</div><h4>SaaS &amp; Platform Development</h4><p>Full-cycle SaaS from MVP to production — multi-tenancy, subscription billing, RBAC, admin super-panels and white-label products.</p><div class="tags"><span>Multi-tenant</span><span>Billing</span><span>White-label</span></div></article>
+      <article class="svc reveal d1" data-cat="build"><div class="idx">B05</div><h4>SaaS &amp; Platform Development</h4><p>Full-cycle SaaS from MVP to production — multi-tenancy, subscription billing, RBAC, admin super-panels and white-label products.</p><a class="svc-3d" href="/pavilion#web">◈ View in 3D →</a><div class="tags"><span>Multi-tenant</span><span>Billing</span><span>White-label</span></div></article>
 
       <article class="svc reveal d2" data-cat="build"><div class="idx">B06</div><h4>CRM &amp; Business Systems</h4><p>Custom CRM, HRMS, inventory, invoicing &amp; accounting, ticketing and field-service tools — standalone or as connected modules.</p><div class="tags"><span>CRM</span><span>HRMS</span><span>Inventory</span><span>Invoicing</span></div></article>
 
-      <article class="svc reveal" data-cat="build"><div class="idx">B07</div><h4>AI Consultancy &amp; Strategy</h4><p>Where AI genuinely adds value — roadmaps, pilots, prompt engineering and production-grade optimisation, never AI for show.</p><div class="tags"><span>Strategy</span><span>Roadmaps</span><span>Pilots</span></div></article>
+      <article class="svc reveal" data-cat="build"><div class="idx">B07</div><h4>AI Consultancy &amp; Strategy</h4><p>Where AI genuinely adds value — roadmaps, pilots, prompt engineering and production-grade optimisation, never AI for show.</p><a class="svc-3d" href="/pavilion#strategy">◈ View in 3D →</a><div class="tags"><span>Strategy</span><span>Roadmaps</span><span>Pilots</span></div></article>
 
-      <article class="svc reveal d1" data-cat="build"><div class="idx">B08</div><h4>IT Solutioning &amp; Infrastructure</h4><p>Cloud &amp; DevOps, system integrations, API development, legacy modernisation, cybersecurity and VAPT remediation.</p><div class="tags"><span>Cloud</span><span>DevOps</span><span>Security</span><span>APIs</span></div></article>
+      <article class="svc reveal d1" data-cat="build"><div class="idx">B08</div><h4>IT Solutioning &amp; Infrastructure</h4><p>Cloud &amp; DevOps, system integrations, API development, legacy modernisation, cybersecurity and VAPT remediation.</p><a class="svc-3d" href="/pavilion#infra">◈ View in 3D →</a><div class="tags"><span>Cloud</span><span>DevOps</span><span>Security</span><span>APIs</span></div></article>
 
-      <article class="svc reveal d2" data-cat="build"><div class="idx">B09</div><h4>Data, Scraping &amp; Analytics</h4><p>Web scraping &amp; enrichment, data pipelines, BI dashboards, forecasting and recommendation engines — from public sources, compliantly.</p><div class="tags"><span>Scraping</span><span>BI</span><span>Dashboards</span></div></article>
+      <article class="svc reveal d2" data-cat="build"><div class="idx">B09</div><h4>Data, Scraping &amp; Analytics</h4><p>Web scraping &amp; enrichment, data pipelines, BI dashboards, forecasting and recommendation engines — from public sources, compliantly.</p><a class="svc-3d" href="/pavilion#agents">◈ View in 3D →</a><div class="tags"><span>Scraping</span><span>BI</span><span>Dashboards</span></div></article>
 
       <!-- GROW -->
-      <article class="svc reveal" data-cat="grow"><div class="idx">G01</div><h4>Sales Outbound &amp; Appointment Setting</h4><p>Multi-channel outreach across email, LinkedIn and WhatsApp — AI-personalised, with lead scraping, enrichment and booked meetings.</p><div class="tags"><span>Outreach</span><span>Appointments</span><span>Lead-gen</span></div></article>
+      <article class="svc reveal" data-cat="grow"><div class="idx">G01</div><h4>Sales Outbound &amp; Appointment Setting</h4><p>Multi-channel outreach across email, LinkedIn and WhatsApp — AI-personalised, with lead scraping, enrichment and booked meetings.</p><a class="svc-3d" href="/pavilion#sales">◈ View in 3D →</a><div class="tags"><span>Outreach</span><span>Appointments</span><span>Lead-gen</span></div></article>
 
-      <article class="svc reveal d1" data-cat="grow"><div class="idx">G02</div><h4>Marketing &amp; Branding</h4><p>Positioning, brand, content and campaigns — with automation and AI running the repetitive parts so the message stays consistent.</p><div class="tags"><span>Brand</span><span>Content</span><span>Campaigns</span></div></article>
+      <article class="svc reveal d1" data-cat="grow"><div class="idx">G02</div><h4>Marketing &amp; Branding</h4><p>Positioning, brand, content and campaigns — with automation and AI running the repetitive parts so the message stays consistent.</p><a class="svc-3d" href="/pavilion#marketing">◈ View in 3D →</a><div class="tags"><span>Brand</span><span>Content</span><span>Campaigns</span></div></article>
 
-      <article class="svc reveal d2" data-cat="grow"><div class="idx">G03</div><h4>Recruitment &amp; Talent</h4><p>Sourcing, screening automation and pipeline management — the right people found faster with agent-assisted workflows.</p><div class="tags"><span>Sourcing</span><span>Screening</span></div></article>
+      <article class="svc reveal d2" data-cat="grow"><div class="idx">G03</div><h4>Recruitment &amp; Talent</h4><p>Sourcing, screening automation and pipeline management — the right people found faster with agent-assisted workflows.</p><a class="svc-3d" href="/pavilion#recruit">◈ View in 3D →</a><div class="tags"><span>Sourcing</span><span>Screening</span></div></article>
 
-      <article class="svc reveal" data-cat="grow"><div class="idx">G04</div><h4>Immigration</h4><p>Work-pass and relocation advisory for founders, teams and talent moving into and around the region.</p><div class="tags"><span>Work passes</span><span>Relocation</span></div></article>
+      <article class="svc reveal" data-cat="grow"><div class="idx">G04</div><h4>Immigration</h4><p>Work-pass and relocation advisory for founders, teams and talent moving into and around the region.</p><a class="svc-3d" href="/pavilion#immigration">◈ View in 3D →</a><div class="tags"><span>Work passes</span><span>Relocation</span></div></article>
 
-      <article class="svc reveal d1" data-cat="grow"><div class="idx">G05</div><h4>Finance &amp; Advisory</h4><p>Financial advisory, forecasting and planning — supported by automated reporting and clean, real-time dashboards.</p><div class="tags"><span>Advisory</span><span>Forecasting</span></div></article>
+      <article class="svc reveal d1" data-cat="grow"><div class="idx">G05</div><h4>Finance &amp; Advisory</h4><p>Financial advisory, forecasting and planning — supported by automated reporting and clean, real-time dashboards.</p><a class="svc-3d" href="/pavilion#finance">◈ View in 3D →</a><div class="tags"><span>Advisory</span><span>Forecasting</span></div></article>
 
-      <article class="svc reveal d2" data-cat="grow"><div class="idx">G06</div><h4>Business Matching</h4><p>Connecting you with the right partners, suppliers and channels — and the systems to manage those relationships as you scale.</p><div class="tags"><span>Partners</span><span>Market entry</span></div></article>
+      <article class="svc reveal d2" data-cat="grow"><div class="idx">G06</div><h4>Business Matching</h4><p>Connecting you with the right partners, suppliers and channels — and the systems to manage those relationships as you scale.</p><a class="svc-3d" href="/pavilion#matching">◈ View in 3D →</a><div class="tags"><span>Partners</span><span>Market entry</span></div></article>
 
-      <article class="svc reveal" data-cat="grow"><div class="idx">G07</div><h4>Education Consultancy</h4><p>Programs, upskilling and digital-transformation guidance to help teams adopt the technology we build with confidence.</p><div class="tags"><span>Programs</span><span>Upskilling</span></div></article>
+      <article class="svc reveal" data-cat="grow"><div class="idx">G07</div><h4>Education Consultancy</h4><p>Programs, upskilling and digital-transformation guidance to help teams adopt the technology we build with confidence.</p><a class="svc-3d" href="/pavilion#education">◈ View in 3D →</a><div class="tags"><span>Programs</span><span>Upskilling</span></div></article>
     </div>
     <p class="svc-note">No fixed packages — every engagement is scoped and quoted individually. <a href="#contact" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px">Tell us what you need →</a></p>
   </div>
@@ -281,6 +286,10 @@
           <li><span class="spark-s">✦</span>Guided tour of every service</li>
           <li><span class="spark-s">✦</span>VR-ready for headsets such as Meta Quest</li>
         </ul>
+        <div class="pav-stations">
+          <a class="b" href="/pavilion#agents">AI Agents</a><a class="b" href="/pavilion#strategy">Strategy</a><a class="b" href="/pavilion#web">Web</a><a class="b" href="/pavilion#mobile">Mobile</a><a class="b" href="/pavilion#infra">Infrastructure</a>
+          <a class="g" href="/pavilion#sales">Outbound</a><a class="g" href="/pavilion#marketing">Marketing</a><a class="g" href="/pavilion#recruit">Talent</a><a class="g" href="/pavilion#immigration">Immigration</a><a class="g" href="/pavilion#finance">Finance</a><a class="g" href="/pavilion#matching">Matching</a><a class="g" href="/pavilion#education">Education</a>
+        </div>
         <div class="hero-cta">
           <a href="/pavilion" class="btn btn-primary">Enter the pavilion <span class="arw">→</span></a>
         </div>
@@ -288,7 +297,7 @@
       </div>
       <a href="/pavilion" class="pav-media reveal d1" aria-label="Enter the TSiD 3D pavilion">
         <video autoplay muted loop playsinline preload="metadata" poster="assets/img/posters/pavilion-walkthrough.jpg"><source src="assets/video/pavilion-walkthrough.mp4" type="video/mp4"></video>
-        <span class="pav-badge">Interactive · Enter in 3D →</span>
+        <span class="pav-badge">◈ Live 3D · Enter →</span>
       </a>
     </div>
   </div>
@@ -431,7 +440,7 @@
       <p>Every Grow service is ordinary consultancy made faster and more consistent by AI, automation and agents working underneath it. Here's what each one actually involves.</p>
     </div>
 
-    <div class="con-row reveal">
+    <div id="g-sales" class="con-row reveal">
       <div class="con-media"><img src="assets/img/grow-appointment.jpg" alt="Sales outbound and appointment setting" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G01</span>
@@ -445,10 +454,11 @@
           <li>Weekly reporting on opens, replies and meetings set</li>
         </ul>
         <p class="con-note">✦ Agents handle the research, personalisation and chasing — your team steps in when a real conversation starts.</p>
+      <a class="con-3d" href="/pavilion#sales">◈ Explore this in 3D →</a>
       </div>
     </div>
 
-    <div class="con-row rev reveal">
+    <div id="g-marketing" class="con-row rev reveal">
       <div class="con-media"><img src="assets/img/grow-marketing.jpg" alt="Marketing and branding services" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G02</span>
@@ -462,10 +472,11 @@
           <li>Performance dashboards you can actually read</li>
         </ul>
         <p class="con-note">✦ Automation runs research, drafts, scheduling and reporting — the thinking stays human.</p>
+      <a class="con-3d" href="/pavilion#marketing">◈ Explore this in 3D →</a>
       </div>
     </div>
 
-    <div class="con-row reveal">
+    <div id="g-recruit" class="con-row reveal">
       <div class="con-media"><img src="assets/img/grow-recruitment.jpg" alt="Recruitment and talent services" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G03</span>
@@ -479,10 +490,11 @@
           <li>Offer and onboarding support</li>
         </ul>
         <p class="con-note">✦ The same CV-intake agent in our case studies runs inside this service.</p>
+      <a class="con-3d" href="/pavilion#recruit">◈ Explore this in 3D →</a>
       </div>
     </div>
 
-    <div class="con-row rev reveal">
+    <div id="g-immigration" class="con-row rev reveal">
       <div class="con-media"><img src="assets/img/grow-immigration.jpg" alt="Immigration advisory services" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G04</span>
@@ -496,10 +508,11 @@
           <li>Ongoing compliance calendar for your team</li>
         </ul>
         <p class="con-note">✦ Deadlines, renewals and document checklists are monitored automatically — humans handle the judgement calls.</p>
+      <a class="con-3d" href="/pavilion#immigration">◈ Explore this in 3D →</a>
       </div>
     </div>
 
-    <div class="con-row reveal">
+    <div id="g-finance" class="con-row reveal">
       <div class="con-media"><img src="assets/img/grow-finance.jpg" alt="Finance and advisory services" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G05</span>
@@ -513,10 +526,11 @@
           <li>Funding-readiness and growth planning</li>
         </ul>
         <p class="con-note">✦ The accounting agent in our case studies keeps the numbers current underneath the advice.</p>
+      <a class="con-3d" href="/pavilion#finance">◈ Explore this in 3D →</a>
       </div>
     </div>
 
-    <div class="con-row rev reveal">
+    <div id="g-matching" class="con-row rev reveal">
       <div class="con-media"><img src="assets/img/grow-matching.jpg" alt="Business matching services" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G06</span>
@@ -530,10 +544,11 @@
           <li>CRM and systems to manage relationships after the match</li>
         </ul>
         <p class="con-note">✦ Data does the longlisting; people make the introductions.</p>
+      <a class="con-3d" href="/pavilion#matching">◈ Explore this in 3D →</a>
       </div>
     </div>
 
-    <div class="con-row reveal">
+    <div id="g-education" class="con-row reveal">
       <div class="con-media"><img src="assets/img/grow-education.jpg" alt="Education consultancy" loading="lazy"></div>
       <div class="con-text">
         <span class="con-idx">G07</span>
@@ -547,6 +562,7 @@
           <li>Adoption measurement, so training proves its worth</li>
         </ul>
         <p class="con-note">✦ We train teams on the exact systems we build for them — not generic courseware.</p>
+      <a class="con-3d" href="/pavilion#education">◈ Explore this in 3D →</a>
       </div>
     </div>
   </div>

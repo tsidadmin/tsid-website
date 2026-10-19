@@ -101,6 +101,18 @@
     });
   });
 
+  /* ---- Pre-select the enquiry topic when arriving from the 3D pavilion (?interest=...) ---- */
+  try {
+    var want = new URLSearchParams(location.search).get("interest");
+    var sel = document.getElementById("interest");
+    if (want && sel) {
+      var w = want.toLowerCase();
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].text.toLowerCase().indexOf(w) === 0 || w.indexOf(sel.options[i].text.toLowerCase()) === 0) { sel.selectedIndex = i; break; }
+      }
+    }
+  } catch (e) {}
+
   /* ---- Contact form (AJAX to /api/contact, graceful fallbacks) ---- */
   var form = document.getElementById("contactForm");
   var status = document.getElementById("formStatus");
