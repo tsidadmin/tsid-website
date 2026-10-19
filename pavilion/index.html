@@ -568,7 +568,7 @@ S.forEach((s,i)=>{
   ao(pos.x,pos.z,3.2);
   const sc=SC[s.k](W.a,W.b);sc.g.position.y=1.02;sc.g.scale.setScalar(1.4);grp.add(sc.g);
   const beam=mesh(new THREE.CylinderGeometry(0.42,1.05,6.0,40,1,true),beamMat(W.a,0.09));beam.position.y=1.0+3.0;grp.add(beam);beams.push(beam.material);
-  const fx=new THREE.Group();fx.position.y=7.05;grp.add(fx);put(fx,new THREE.CylinderGeometry(0.46,0.46,0.06,40),M.hull);put(fx,new THREE.CircleGeometry(0.42,40),glow(0xffffff,2.2),[0,-0.031,0],[Math.PI/2,0,0]);
+  const fx=new THREE.Group();fx.position.y=7.05;grp.add(fx);put(fx,new THREE.CylinderGeometry(0.46,0.46,0.06,40),M.hull);put(fx,new THREE.CircleGeometry(0.42,40),glow(0xcfefff,0.85),[0,-0.031,0],[Math.PI/2,0,0]);put(fx,new THREE.RingGeometry(0.3,0.33,48),glow(0xffffff,1.4),[0,-0.033,0],[Math.PI/2,0,0]);
   put(fx,new THREE.TorusGeometry(0.46,0.01,6,64),glow(W.a,2),null,[Math.PI/2,0,0]);
   const panelG=new THREE.Group();panelG.position.set(0,4.3,-1.7);grp.add(panelG);
   const panel=mesh(new THREE.PlaneGeometry(3.3,2.45),new THREE.MeshBasicMaterial({color:new THREE.Color(0.95,0.95,0.95),transparent:true,toneMapped:false}));panelG.add(panel);
